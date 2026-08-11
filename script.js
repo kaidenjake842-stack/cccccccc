@@ -450,7 +450,7 @@ themeSwatches.forEach(swatch => {
 
 const API_HOST =
   location.hostname === "127.0.0.1" ? "127.0.0.1" : "localhost";
-const API_URL = `http://${API_HOST}:3000`;
+const API_URL = `https://cccccccc-fo54.onrender.com`;
 
 async function apiRequest(path, options = {}) {
   const token = localStorage.getItem("assetHubAuthToken");
