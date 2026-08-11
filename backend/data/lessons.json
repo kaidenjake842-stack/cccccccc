@@ -1,0 +1,32 @@
+[
+  {
+    "id": "lesson-remotes",
+    "title": "Understanding RemoteEvents",
+    "category": "Roblox Scripting",
+    "difficulty": "Beginner",
+    "minutes": 6,
+    "summary": "Learn how LocalScripts and server Scripts communicate with RemoteEvents.",
+    "content": "RemoteEvents allow communication between the Roblox client and server. A common place to store them is ReplicatedStorage because both sides can access it.\n\nUse FireServer from a LocalScript to send information to the server. On the server, listen with OnServerEvent. Always validate important information on the server instead of trusting the client.",
+    "code": "local ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal event = ReplicatedStorage:WaitForChild(\"MyEvent\")\n\nevent:FireServer(\"Hello\")"
+  },
+  {
+    "id": "lesson-datastores",
+    "title": "DataStore Basics",
+    "category": "DataStores",
+    "difficulty": "Intermediate",
+    "minutes": 8,
+    "summary": "Learn the basic structure for loading and saving persistent player data.",
+    "content": "DataStoreService stores player data between game sessions. DataStore calls can fail, so wrap network calls in pcall. Saving should happen from a server Script, not a LocalScript.\n\nUse a consistent DataStore name and a stable key such as the player's UserId.",
+    "code": "local DataStoreService = game:GetService(\"DataStoreService\")\nlocal store = DataStoreService:GetDataStore(\"PlayerData_V1\")"
+  },
+  {
+    "id": "lesson-ui",
+    "title": "Building Better Roblox UI",
+    "category": "UI Design",
+    "difficulty": "Beginner",
+    "minutes": 5,
+    "summary": "Learn cleaner spacing, hierarchy, readable text, and responsive layout basics.",
+    "content": "Strong UI uses consistent spacing, clear hierarchy, readable text sizes, and a limited color system. Use UIListLayout or UIGridLayout when possible instead of manually positioning repeated elements.\n\nFor interfaces that should adapt across devices, combine Scale values with constraints and test on several screen sizes.",
+    "code": ""
+  }
+]

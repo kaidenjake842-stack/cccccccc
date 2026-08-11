@@ -1,0 +1,22 @@
+{
+  "name": "asset-hub-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Asset Hub authentication backend with email password resets.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.5",
+    "multer": "^2.0.2"
+  }
+}

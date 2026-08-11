@@ -1,0 +1,18 @@
+[
+  {
+    "id": "update-250",
+    "version": "v2.5.0",
+    "title": "Seller & Permissions Update",
+    "description": "Seller uploads, access permissions, download permissions, and marketplace fixes are now live.",
+    "tag": "MAJOR",
+    "pinned": true,
+    "date": "2026-08-11",
+    "changes": [
+      "Added Seller Dashboard",
+      "Added seller asset uploads",
+      "Added view and download permissions",
+      "Fixed asset deletion",
+      "Fixed View Asset for seller uploads"
+    ]
+  }
+]

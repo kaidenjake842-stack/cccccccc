@@ -1,0 +1,11 @@
+{
+  "badges": {
+    "owner": "Full owner access",
+    "admin": "Website administration access",
+    "staff": "Asset Hub staff",
+    "creator": "Verified asset creator",
+    "premium": "Premium member",
+    "verified": "Verified account",
+    "early": "Early Asset Hub member"
+  }
+}
