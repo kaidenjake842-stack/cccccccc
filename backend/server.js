@@ -16,6 +16,10 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = Number(process.env.PORT || 3000);
+
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Asset Hub API running on port ${PORT}`);
+});
 const USERS_FILE = path.join(__dirname, "data", "users.json");
 const ASSETS_FILE = path.join(__dirname, "data", "assets.json");
 const UPDATES_FILE = path.join(__dirname, "data", "updates.json");
